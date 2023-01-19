@@ -5,13 +5,13 @@
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": [
+    "required":[
       "id",
       "name",
       "number",
       "balance",
       "currency"
-    ],
+  ],
     "properties": {
       "id": {
         "type": "integer"
@@ -29,7 +29,8 @@
         "default": 0
       },
       "currency": {
-        "type": "string"
+        "type": "string",
+        "enum": ["RUB", "USD"]
       }
     }
   }
